@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+           prefHeight="600" prefWidth="450"
+           styleClass="root"
+           stylesheets="@gamemenu.css">
+
+    <VBox alignment="CENTER" spacing="25" style="-fx-padding: 40;">
+
+        <!-- Header Section -->
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="Game Hub" styleClass="title-label">
+                <font>
+                    <Font name="System Bold" size="42"/>
+                </font>
+            </Label>
+            <Label text="Choose your adventure" styleClass="subtitle-label">
+                <font>
+                    <Font size="16"/>
+                </font>
+            </Label>
+        </VBox>
+
+        <!-- Spacer -->
+        <Region VBox.vgrow="SOMETIMES" minHeight="20"/>
+
+        <!-- Game Buttons Container -->
+        <VBox spacing="20" alignment="CENTER" maxWidth="320">
+
+            <!-- Tic-Tac-Toe Button -->
+            <Button fx:id="ticTacToeButton" text="🎯 Tic-Tac-Toe"
+                    styleClass="game-button"
+                    prefWidth="320" prefHeight="70">
+                <font>
+                    <Font name="System Bold" size="18"/>
+                </font>
+            </Button>
+
+            <!-- Pacman Button (Changed from Ludo) -->
+            <Button fx:id="pacmanButton" text="👻 Pacman"
+                    styleClass="game-button"
+                    prefWidth="320" prefHeight="70">
+                <font>
+                    <Font name="System Bold" size="18"/>
+                </font>
+            </Button>
+
+            <!-- Memory Game Button -->
+            <Button fx:id="memoryGameButton" text="🧠 Memory Game"
+                    styleClass="game-button"
+                    prefWidth="320" prefHeight="70">
+                <font>
+                    <Font name="System Bold" size="18"/>
+                </font>
+            </Button>
+
+        </VBox>
+
+        <!-- Spacer -->
+        <Region VBox.vgrow="SOMETIMES" minHeight="20"/>
+
+        <!-- Footer -->
+        <Label text="Select a game to begin" styleClass="footer-label">
+            <font>
+                <Font size="14"/>
+            </font>
+        </Label>
+
+    </VBox>
+
+</StackPane>
